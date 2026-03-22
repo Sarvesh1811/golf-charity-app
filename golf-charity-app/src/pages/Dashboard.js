@@ -17,7 +17,7 @@ function Dashboard() {
   if (!user) navigate("/");
 
   fetchScores();
-}, [navigate]);
+}, [navigate]); 
   // Fetch scores from backend
   const fetchScores = async () => {
     try {
