@@ -13,12 +13,11 @@ function Dashboard() {
 
   
   useEffect(() => {
-    const user = localStorage.getItem("user");
-    if (!user) navigate("/");
+  const user = localStorage.getItem("user");
+  if (!user) navigate("/");
 
-    fetchScores();
-  }, []);
-
+  fetchScores();
+}, [navigate]);
   // Fetch scores from backend
   const fetchScores = async () => {
     try {
